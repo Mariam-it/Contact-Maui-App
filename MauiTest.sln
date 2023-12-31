@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMauiApp", "MyMauiApp\MyMauiApp.csproj", "{F285FB41-6AE8-42AD-B1DC-CD388D2E518E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AF223F3-CBA1-4DB2-8D0A-917C1443B6ED} = {4AF223F3-CBA1-4DB2-8D0A-917C1443B6ED}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{9274E244-DBF0-49A9-A145-C3AF4BD4AFB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactTest", "ContactTest\ContactTest.csproj", "{4AF223F3-CBA1-4DB2-8D0A-917C1443B6ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F285FB41-6AE8-42AD-B1DC-CD388D2E518E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F285FB41-6AE8-42AD-B1DC-CD388D2E518E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F285FB41-6AE8-42AD-B1DC-CD388D2E518E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F285FB41-6AE8-42AD-B1DC-CD388D2E518E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F285FB41-6AE8-42AD-B1DC-CD388D2E518E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F285FB41-6AE8-42AD-B1DC-CD388D2E518E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9274E244-DBF0-49A9-A145-C3AF4BD4AFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9274E244-DBF0-49A9-A145-C3AF4BD4AFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9274E244-DBF0-49A9-A145-C3AF4BD4AFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9274E244-DBF0-49A9-A145-C3AF4BD4AFB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF223F3-CBA1-4DB2-8D0A-917C1443B6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF223F3-CBA1-4DB2-8D0A-917C1443B6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF223F3-CBA1-4DB2-8D0A-917C1443B6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF223F3-CBA1-4DB2-8D0A-917C1443B6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {192B79DD-74B8-436D-82AE-CB066FCC0AAB}
+	EndGlobalSection
+EndGlobal

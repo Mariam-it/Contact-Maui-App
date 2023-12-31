@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiApp.Pages.ContactDetailPage"
+             Title="ContactDetailPage">
+    <VerticalStackLayout MaximumWidthRequest="300">
+        <StackLayout HorizontalOptions="Center" MinimumWidthRequest="300">
+            <Label Text="First Name"/>
+            <Entry Text="{Binding FirstName, Mode=TwoWay}" Margin="0, 10"/>
+            <Label Text="Last Name"/>
+            <Entry Text="{Binding LastName, Mode=TwoWay}" Margin="0, 10"/>
+            <Label Text="Phone Number"/>
+            <Entry Text="{Binding PhoneNumber, Mode=TwoWay}" Margin="0, 10"/>
+            <Label Text="Email"/>
+            <Entry Text="{Binding Email, Mode=TwoWay}" Margin="0, 10"/>
+            <Label Text="Address"/>
+            <Entry Text="{Binding Address, Mode=TwoWay}" Margin="0, 10"/>
+        </StackLayout>
+        <Button Text="Uppdatera Kontakt" Clicked="OnUpdateContactClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

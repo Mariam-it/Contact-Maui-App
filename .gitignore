@@ -1,0 +1,15 @@
+# Bygg resultat
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+
+# Filerna som genereras av Visual Studio
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.dsstore
+*.vs
+
+# Och så vidare...

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMauiApp.Pages.ContactAddPage"
+             Title="Add Contact">
+    <VerticalStackLayout MaximumWidthRequest="350" Spacing="10">
+        <Label 
+        Text="Add New Contact"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" Margin="0, 0, 0, 20" FontAttributes="Bold" FontSize="Medium"/>
+
+        <!-- Förnamn -->
+        <Entry
+        x:Name="FirstNameEntry"
+        Placeholder="First Name"
+        VerticalOptions="CenterAndExpand" />
+
+        <!-- Efternamn -->
+        <Entry
+        x:Name="LastNameEntry"
+        Placeholder="Last Name"
+        VerticalOptions="CenterAndExpand" />
+
+        <!-- Telefonnummer -->
+        <Entry
+        x:Name="PhoneNumberEntry"
+        Placeholder="Phone Number"
+        VerticalOptions="CenterAndExpand" />
+
+        <!-- E-postadress -->
+        <Entry
+        x:Name="EmailEntry"
+        Placeholder="Email"
+        VerticalOptions="CenterAndExpand" />
+
+        <!-- Adressinformation -->
+        <Entry
+        x:Name="AddressEntry"
+        Placeholder="Address"
+        VerticalOptions="CenterAndExpand" />
+
+        <!-- Lägg till knapp -->
+        <Button
+    x:Name="Btn_Add" 
+    Text="Add Contact"
+    Clicked="AddContact"
+    VerticalOptions="CenterAndExpand"/>
+
+
+    </VerticalStackLayout>
+
+
+</ContentPage>
