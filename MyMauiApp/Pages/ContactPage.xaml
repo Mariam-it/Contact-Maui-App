@@ -17,7 +17,7 @@
                 <Label Text="Kontakt List" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Micro"/>
                 <Button x:Name="Btn_Get" Text="Hämta alla kontakter" Clicked="Btn_Get_Clicked" Margin="0, 10"/>
                 <Entry x:Name="EmailEntry" Placeholder="Ange e-postadress" VerticalOptions="CenterAndExpand" />
-                <Button Text="Ta bort kontakten" Clicked="OnDeleteContactClicked" Margin="0, 10"/>
+                <Button Text="Ta Bort Kontakt" Clicked="OnDeleteContactClicked"/>
             </StackLayout>
         </Grid>
     </VerticalStackLayout>

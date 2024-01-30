@@ -4,9 +4,9 @@ namespace MyMauiApp.Pages
 {
     public partial class ContactAddPage : ContentPage
     {
-        private readonly ContactService _contactService;
+        private readonly IContactService _contactService;
 
-        public ContactAddPage(ContactService contactService)
+        public ContactAddPage(IContactService contactService)
         {
             InitializeComponent();
             _contactService = contactService;
@@ -26,7 +26,9 @@ namespace MyMauiApp.Pages
                 Address = AddressEntry.Text
             };
             // Lägg till den nya kontakten i kontaktlistan
-            _contactService.Add(newContact);
+            
+            _contactService.AddContactToList(newContact);
+
             // Rensa inmatningsfälten
             FirstNameEntry.Text = "";
             LastNameEntry.Text = "";

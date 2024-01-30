@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Specifiera flera målramverk för de olika plattformarna som stöds av MAUI -->
+		<TargetFrameworks>net8.0</TargetFrameworks>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<!-- Övriga konfigurationer -->
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<PropertyGroup>
+		<SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
+	</PropertyGroup>
+	<PropertyGroup>
+		<PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="xunit" Version="2.6.6" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.6" />
+		<!-- Lägg till andra Maui-relaterade paket här om det behövs -->
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="8.0.3" />
+	</ItemGroup>
+
+
+</Project>

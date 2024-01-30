@@ -21,7 +21,7 @@ namespace MyMauiApp.Pages
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            _viewModel.LoadContacts(); // Anropa metoden för att hämta kontakterna
+            _viewModel.LoadContacts(); 
             BindingContext = _viewModel;
             if (_viewModel.Contacts.Count == 0)
             {
@@ -34,19 +34,11 @@ namespace MyMauiApp.Pages
         /// </summary>
         private async void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
-            if (e.Item is Shared.Models.Contact contact)
+            if (e.Item is Shared.Models.Contact selectedContact)
             {
-                System.Diagnostics.Debug.WriteLine("Tapped item: " + contact.ToString());
-
                 var contactDetailPage = _serviceProvider.GetRequiredService<ContactDetailPage>();
-
-                contactDetailPage.SetContact(contact);
-
+                contactDetailPage.SetContact(selectedContact);
                 await Navigation.PushAsync(contactDetailPage);
-            }
-            else
-            {
-                System.Diagnostics.Debug.WriteLine("Konvertering till Contact misslyckades");
             }
         }
 

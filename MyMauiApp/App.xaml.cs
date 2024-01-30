@@ -25,22 +25,4 @@ namespace MyMauiApp
     }
 }
 
-//using MyMauiApp.Pages;
-
-//namespace MyMauiApp
-//{
-//    public partial class App : Application
-//    {
-//        private readonly IServiceProvider _serviceProvider;
-//        public App(IServiceProvider serviceProvider)
-//        {
-//            InitializeComponent();
-//            _serviceProvider = serviceProvider;
-
-//            var contactPage = _serviceProvider.GetRequiredService<ContactPage>();
-
-//            MainPage = new NavigationPage(contactPage);
-//        }
-//    }
-//}
 

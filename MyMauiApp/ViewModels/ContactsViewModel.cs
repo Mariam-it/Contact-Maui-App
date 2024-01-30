@@ -1,38 +1,40 @@
 ﻿using System.Collections.ObjectModel;
 using Shared.Services;
-using Contact = Shared.Models.Contact;
 using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace MyMauiApp.ViewModels
 {
     public class ContactsViewModel : ObservableObject
     {
-        private readonly ContactService _contactService;
+        private readonly IContactService _contactService;
         /// <summary>
         /// Konstruktor för ContactsViewModel.
         /// </summary>
 
-        public ContactsViewModel(ContactService contactService)
+        public ContactsViewModel(IContactService contactService)
         {
             _contactService = contactService;
+            Contacts = [];
             LoadContacts();
         }
 
-        public ObservableCollection<Contact> Contacts { get; } = [];
-
-        /// <summary>
-        /// Laddar kontakter från ContactService och uppdaterar Contacts-egenskapen.
-        /// </summary>
+        public ObservableCollection<Shared.Models.Contact> Contacts { get; private set; }
         public void LoadContacts()
         {
-            var contactsFromService = _contactService?.GetAll();
+            var contactsFromService = _contactService.GetContacsFromList();
             Contacts.Clear();
-            if (contactsFromService != null)
+            foreach (var contact in contactsFromService)
             {
-                foreach (var contact in contactsFromService)
-                {
-                    Contacts.Add(contact);
-                }
+                Contacts.Add(contact);
+            }
+        }
+        public void RemoveContact(string email)
+        {
+            var contactToRemove = Contacts.FirstOrDefault(c => c.Email == email);
+            if (contactToRemove != null)
+            {
+                Contacts.Remove(contactToRemove);
+                _contactService.RemoveContactFromList(email);
             }
         }
     }
