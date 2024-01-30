@@ -44,6 +44,6 @@ Start the application, and you will be presented with a user interface where you
 Specify your license here (e.g., MIT, GPL, etc.).
 
 ## Contact
-Your Name - your email
+Mariam - mariam.al.it@hotmail.com
 
-Project Link: [https://github.com/yourGithubUsername/yourProjectRepo](https://github.com/yourGithubUsername/yourProjectRepo)
+Project Link: [https://github.com/Mariam-it/Contact-Maui-App.git](https://github.com/Mariam-it/Contact-Maui-App.git)
